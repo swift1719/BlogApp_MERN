@@ -1,3 +1,6 @@
+USE " npm run dev " command to execute both server and client concurrently.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
