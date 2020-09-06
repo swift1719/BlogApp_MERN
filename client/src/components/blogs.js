@@ -12,7 +12,7 @@ const Blogs = ({ posts }) => {
 	const deleteBlog = (id) => {
 		axios.delete(`/blogs/${id}`).then((res) => setMessage('Deleted Successfully!!!'));
 
-		setBlogs(blogs.filter((ele) => ele._id !== id));
+		setBlogs(blogs.filter((el) => el._id !== id));
 	};
 
 	return (
@@ -37,11 +37,7 @@ const Blogs = ({ posts }) => {
 								</Link>
 							</div>
 							<div className="p-2 ">
-								<Link
-									to="/delete"
-									onClick={() => deleteBlog(blog._id)}
-									className="btn btn-outline-danger"
-								>
+								<Link to="/" onClick={() => deleteBlog(blog._id)} className="btn btn-outline-danger">
 									Delete
 								</Link>
 							</div>
